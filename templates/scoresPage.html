@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title> Recent Scores</title>
+    <link rel="stylesheet" href="/resources/scoresPage.css">
+  </head>
+
+  <body>
+    <!-- Marvel Quiz Board -->
+    <div id = "logo">
+      <a href= "/"><img src="resources/PicsArt.png" width="50" height="50"/></a>
+    </div>
+
+    <h1 id = "scores"> Most recent scores! </h1>
+      <div id = "parent">
+        <div id = "sectionMarvel">
+          <p id = "top10M"> <br> Recent quiz takers for Marvel! </p>
+            {% for i in range (boardMarvelnames|length)%}
+          <p id = "usersM"> {{ i + 1 }}. {{boardMarvelnames[i]}} scored {{boardMarvelscores[i]}}/10! </p>
+            {% endfor %}
+        </div>
+        <!-- GOT Quiz Board -->
+        <div id = "sectionGOT">
+          <p id = "top10G"> <br> Recent quiz takers for Game of Thrones! </p>
+            {% for j in range (boardGOTnames|length)%}
+          <p id = "usersG"> {{ j + 1 }}. {{boardGOTnames[j]}} scored {{boardGOTscores[j]}}/10! </p>
+            {% endfor %}
+        </div>
+        <!-- Harry Potter Quiz Board -->
+        <div id = "sectionHarry">
+          <p id = "top10H"> <br> Recent quiz takers for Harry Potter! </p>
+            {% for k in range (boardHnames|length)%}
+          <p id = "usersH"> {{ k + 1 }}. {{boardHnames[k]}} scored {{boardHscores[k]}}/10! </p>
+            {% endfor %}
+        </div>
+
+        <!-- Avatar Potter Quiz Board -->
+        <div id = "sectionAvatar">
+          <p id = "top10A"> <br> Recent quiz takers for Avatar! </p>
+          {% for i in range (boardAnames|length)%}
+            <p id = "usersA"> {{ i + 1 }}. {{boardAnames[i]}} scored {{boardAscores[i]}}/10! </p>
+          {% endfor %}
+        </div>
+
+      </div>
+
+  </body>
+</html>

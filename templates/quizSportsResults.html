@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title> Results for Marvel Quiz </title>
+    <link rel="stylesheet" href="/resources/quizMarvelResults.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Marvel" /><link rel='stylesheet' href='//fonts.googleapis.com/css?family=Marvel' type='text/css' />
+  </head>
+
+  <body>
+
+    <div id = "grandparent">
+      <div id = "logo">
+        <a href= "/"><img src="resources/PicsArt.png" width="50" height="50"/></a>
+      </div>
+
+      <div id = "parent">
+        <div id = "section">
+        <p id = "results"> <br> You scored {{ score }}/10! </p>
+        {% if score >= 8 %}
+          <img id = "gif" src = "https://media.giphy.com/media/qU3ygbyBm0ynC/giphy.gif" width = "650px" height = "350px">
+          <h3> You're the best! </h3>
+          <embed id = "music" src="resources/Applause - Crowd.mp3" autostart="true" loop="false" hidden="true">
+        {% elif score < 8 and score >= 5 %}
+          <img id = "gif" src = "https://68.media.tumblr.com/ea249ebc407fb5ec100e228893916220/tumblr_ocxp4p7TU31rf0j0eo1_500.gif" width = "650px" height = "350px">
+          <h3> You're getting there! </h3>
+          <embed id = "music" src="resources/Wha - Happen.mp3" autostart="true" loop="false" hidden="true">
+        {% else %}
+          <img id = "gif" src = "https://media.giphy.com/media/8CVyFBH7MGenC/giphy.gif" width = "650px" height = "350px">
+          <h3> You suck! </h3>
+          <embed id = "music" src="resources/wah - wah.mp3" autostart="true" loop="false" hidden="true">
+        {% endif %}
+        </div>
+        <div id = "section2">
+          <p id = "top10"> <br> Recent quiz takers! </p>
+          {% for i in range (boardnames|length)%}
+            <p id = "users"> {{ i + 1 }}. {{boardnames[i]}} scored {{boardscores[i]}}/10! </p>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src = "/resources/quizSportsResults.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>Submit a Question</title>
+  <link rel= "stylesheet" href ="resources/submitQuestion.css">
+</head>
+
+<body>
+
+	<div id = "logo">
+		<a href= "/"><img src="resources/PicsArt.png" width="50" height="50"/></a>
+	</div>
+
+	<h1>What do you want to submit?</h1>
+<center>
+<section id = "parent1">
+
+	<section id= "inside_parent1">
+		<form method="post">
+			<label id = "question_1">Question<input id= "question" type="text" name="question"></label> <br>
+    	<label id= "answer_1">Answer<input id= "answer" type="text" name="answer"></label> <br>
+			<label id ="topic_1">Topic<input id ="topicQ" type="text" name="topicQ"></label> <br>
+			<button id= "submit">  Submit</button>
+		</form>
+	</section>
+
+
+
+	<section id= "saveddata">
+		<h2>What we got from you:</h2>
+		<ul>
+			<li id= "topic">Submission: <span id="submission-placeholder"></span></li>
+    	<li id= "topic"> Answer: <span id="answer-placeholder"></span></li>
+			<li id= "topic">Topic: <span id="topic-placeholder"></span></li>
+	</section>
+
+</section>
+</center>
+
+
+	<script
+	src= "https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js">
+	</script>
+	<script src = "/resources/submitQuestion.js"></script>
+</body>
+</html>

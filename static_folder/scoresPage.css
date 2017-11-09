@@ -1,0 +1,49 @@
+body {
+  background-image: url(mario.gif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+#scores {
+  margin-top: 1px;
+  text-align: center;
+  font-size: 65px;
+}
+
+#sectionMarvel {
+  text-align: center;
+  margin-right: 50px;
+  width: 300px;
+  border: 5px solid white;
+}
+
+#sectionGOT {
+  margin-right: 50px;
+  text-align: center;
+  width: 300px;
+  border: 5px solid white;
+}
+
+#sectionHarry {
+  margin-right: 50px;
+  border-color: white;
+  text-align: center;
+  width: 300px;
+  border: 5px solid white;
+}
+
+#sectionAvatar {
+  border-color: white;
+  text-align: center;
+  width: 300px;
+  border: 5px solid white;
+}
+#parent {
+  display: flex;
+  margin-top: 40px;
+  align-items: flex-start;
+  justify-content: center;
+}

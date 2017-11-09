@@ -1,0 +1,84 @@
+body {
+  background-image: url("http://wallpapercave.com/wp/NdBYC1g.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
+#parent {
+  display: inline-block;
+  text-align: center;
+  padding-left: 240px;
+  padding-right: 200px;
+}
+
+#section {
+  float: left;
+  padding-right: 50px;
+}
+
+#section2 {
+  float: right;
+  padding-right: 100px;
+  font-size: 20px;
+  padding-top: 50px;
+}
+
+
+
+#results {
+  color: black;
+  font-family: Marvel;
+  font-size: 60px;
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
+}
+
+#gif {
+  width: 500px;
+  display: none;
+}
+
+h3 {
+  /*margin-top: -1px;
+  margin-left: 310px;*/
+  font-family: bold;
+  font-size: 60px;
+  font-family: Marvel;
+  display: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+#leadBoard {
+  margin-left: 880px;
+  margin-top: -450px;
+  color: black;
+  font-family: Marvel;
+  /*border: black solid 3px;*/
+  width: 250px;
+}
+
+#top10 {
+  color: black;
+  font-family: Marvel;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
+}
+
+#users {
+  font-weight: bold;
+}
+
+#grandparent {
+  display: flex;
+  align-items: flex-start;
+}
+
+#music{
+  display: none;
+}

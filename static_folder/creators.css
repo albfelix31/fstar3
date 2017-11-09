@@ -1,0 +1,54 @@
+body{
+  background-repeat: no-repeat;
+  background-image: url(http://www.gifimagesdownload.com/wp-content/uploads/2016/02/latest-background-gif-784.gif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+h2 {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+#grandparent {
+  display: flex;
+  justify-content: center;
+  margin-right: 250px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+#AlbertParent {
+  margin-right: 70px;
+  border: 3px solid white;
+  width: 280px;
+}
+
+#NickParent {
+  margin-right: 70px;
+  border: 3px solid white;
+  width: 280px;
+}
+
+#AshaParent {
+  border: 3px solid white;
+  width: 280px;
+}
+
+p {
+  text-align: left;
+  margin-left: 12px;
+}
+
+#logo {
+  margin-top: -80px;
+}
